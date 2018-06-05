@@ -1,10 +1,10 @@
-node() {
+node {
   
-  stage('ENV Test') {
+  stage("ENV Test") {
 	  echo "test use"
   }
 
-  stage('Test 2') {
+  stage("Test 2") {
 	  echo "test use"
   }
 	
