@@ -1,7 +1,11 @@
 node() {
   
   stage('ENV Test') {
-	echo "测试环境变量"
+	  echo "test use"
+  }
+
+  stage('Test 2') {
+	  echo "test use"
   }
 	
 }
