@@ -12,6 +12,14 @@ pipeline {
              echo 'not using shell'
           }
        }
+       stage('测试') {
+	   steps {
+             sh "echo Test"
+           }
+           stage('ie') {
+	       sh "ie test..."
+           }
+       }
        stage('deploy') {
            steps {
                sh "mvn -v"
