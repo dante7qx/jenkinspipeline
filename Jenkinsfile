@@ -17,7 +17,9 @@ pipeline {
              sh "echo Test"
            }
            stage('ie') {
-	       sh "ie test..."
+               steps {
+	           sh "ie test..."
+               }
            }
        }
        stage('deploy') {
