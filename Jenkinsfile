@@ -16,12 +16,12 @@ pipeline {
          parallel {
            stage('firefox') {
 	       steps {
-                   sh "echo Test"
+                   sh "echo firefox test..."
                }
            }
            stage('ie') {
                steps {
-	           sh "ie test..."
+	           sh "echo ie test..."
                }
            }
          }
