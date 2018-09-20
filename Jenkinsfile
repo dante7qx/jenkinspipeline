@@ -13,14 +13,18 @@ pipeline {
           }
        }
        stage('测试') {
-	   steps {
-             sh "echo Test"
+         parallel {
+           stage('firefox') {
+	       steps {
+                   sh "echo Test"
+               }
            }
            stage('ie') {
                steps {
 	           sh "ie test..."
                }
            }
+         }
        }
        stage('deploy') {
            steps {
