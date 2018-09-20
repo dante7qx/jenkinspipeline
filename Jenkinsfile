@@ -31,5 +31,8 @@ pipeline {
                sh "mvn -v"
            }
        }
+       stage('cleanWS') {
+	  cleanWs()
+       }
     }
 }
